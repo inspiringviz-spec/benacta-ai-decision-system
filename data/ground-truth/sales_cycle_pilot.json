@@ -1,0 +1,688 @@
+[
+  {
+    "sale_order_id": 2,
+    "customer": "Crest Systems GmbH",
+    "segment": "Mid-market Industrial",
+    "order_date": "2024-07-04",
+    "state": "paid",
+    "lines": [
+      {
+        "product": "Industrial HVAC Unit TH-101",
+        "qty": 4,
+        "price_unit": 121255.03
+      },
+      {
+        "product": "Sorting Unit MH-101",
+        "qty": 1,
+        "price_unit": 66898.41
+      }
+    ],
+    "invoice_id": 4,
+    "invoice_date": "2024-07-08",
+    "credit_note_id": 5,
+    "payment_date": "2024-09-16"
+  },
+  {
+    "sale_order_id": 3,
+    "customer": "Summit Metalworks Corp",
+    "segment": "Mid-market Industrial",
+    "order_date": "2025-10-17",
+    "state": "paid",
+    "lines": [
+      {
+        "product": "Maintenance Kit SP-102",
+        "qty": 5,
+        "price_unit": 5559.0
+      },
+      {
+        "product": "Spare Parts Bundle SP-101",
+        "qty": 2,
+        "price_unit": 6175.8
+      }
+    ],
+    "invoice_id": 6,
+    "invoice_date": "2025-10-20",
+    "payment_date": "2025-11-14"
+  },
+  {
+    "sale_order_id": 4,
+    "customer": "Summit Metalworks Corp",
+    "segment": "Mid-market Industrial",
+    "order_date": "2025-07-09",
+    "state": "unpaid",
+    "lines": [
+      {
+        "product": "Spare Parts Bundle SP-100",
+        "qty": 1,
+        "price_unit": 10462.12
+      },
+      {
+        "product": "Sorting Unit MH-101",
+        "qty": 5,
+        "price_unit": 64643.22
+      },
+      {
+        "product": "Heat Exchanger TH-100",
+        "qty": 1,
+        "price_unit": 54773.94
+      }
+    ],
+    "invoice_id": 7,
+    "invoice_date": "2025-07-11"
+  },
+  {
+    "sale_order_id": 5,
+    "customer": "Titan Systems GmbH",
+    "segment": "Mid-market Industrial",
+    "order_date": "2024-05-31",
+    "state": "paid",
+    "lines": [
+      {
+        "product": "Robotic Cell PL-102",
+        "qty": 4,
+        "price_unit": 726177.43
+      }
+    ],
+    "invoice_id": 8,
+    "invoice_date": "2024-06-05",
+    "payment_date": "2024-08-11"
+  },
+  {
+    "sale_order_id": 6,
+    "customer": "Sterling Grid GmbH",
+    "segment": "Energy & Utilities",
+    "order_date": "2024-09-05",
+    "state": "draft",
+    "lines": [
+      {
+        "product": "Industrial HVAC Unit TH-102",
+        "qty": 3,
+        "price_unit": 162536.55
+      }
+    ]
+  },
+  {
+    "sale_order_id": 7,
+    "customer": "Anchor Pharma Inc",
+    "segment": "Pharma / Life Sciences",
+    "order_date": "2024-07-10",
+    "state": "paid",
+    "lines": [
+      {
+        "product": "Sensor Array CA-102",
+        "qty": 5,
+        "price_unit": 90056.89
+      },
+      {
+        "product": "Spare Parts Bundle SP-100",
+        "qty": 2,
+        "price_unit": 10731.31
+      }
+    ],
+    "invoice_id": 9,
+    "invoice_date": "2024-07-14",
+    "payment_date": "2024-07-31"
+  },
+  {
+    "sale_order_id": 8,
+    "customer": "Anchor Systems GmbH",
+    "segment": "Mid-market Industrial",
+    "order_date": "2025-06-27",
+    "state": "draft",
+    "lines": [
+      {
+        "product": "Mixing Tank PV-102",
+        "qty": 1,
+        "price_unit": 97920.23
+      },
+      {
+        "product": "Spare Parts Bundle SP-101",
+        "qty": 3,
+        "price_unit": 5694.15
+      },
+      {
+        "product": "Spare Parts Bundle SP-100",
+        "qty": 3,
+        "price_unit": 10454.21
+      }
+    ]
+  },
+  {
+    "sale_order_id": 9,
+    "customer": "Cascade Systems Holdings",
+    "segment": "Mid-market Industrial",
+    "order_date": "2025-08-25",
+    "state": "paid",
+    "lines": [
+      {
+        "product": "Sensor Array CA-102",
+        "qty": 2,
+        "price_unit": 89766.96
+      },
+      {
+        "product": "Mixing Tank PV-100",
+        "qty": 1,
+        "price_unit": 180328.46
+      }
+    ],
+    "invoice_id": 10,
+    "invoice_date": "2025-08-26",
+    "payment_date": "2025-09-21"
+  },
+  {
+    "sale_order_id": 10,
+    "customer": "Beacon Renewables Ltd",
+    "segment": "Energy & Utilities",
+    "order_date": "2025-06-22",
+    "state": "paid",
+    "lines": [
+      {
+        "product": "SCADA System CA-103",
+        "qty": 1,
+        "price_unit": 91970.85
+      },
+      {
+        "product": "Mixing Tank PV-100",
+        "qty": 4,
+        "price_unit": 165290.92
+      },
+      {
+        "product": "Robotic Cell PL-100",
+        "qty": 3,
+        "price_unit": 581706.31
+      }
+    ],
+    "invoice_id": 11,
+    "invoice_date": "2025-06-24",
+    "payment_date": "2025-09-05"
+  },
+  {
+    "sale_order_id": 11,
+    "customer": "Global Renewables Ltd",
+    "segment": "Energy & Utilities",
+    "order_date": "2025-07-06",
+    "state": "paid",
+    "lines": [
+      {
+        "product": "Spare Parts Bundle SP-101",
+        "qty": 1,
+        "price_unit": 6148.94
+      },
+      {
+        "product": "SCADA System CA-103",
+        "qty": 1,
+        "price_unit": 94318.19
+      }
+    ],
+    "invoice_id": 12,
+    "invoice_date": "2025-07-11",
+    "credit_note_id": 13,
+    "payment_date": "2025-09-24"
+  },
+  {
+    "sale_order_id": 12,
+    "customer": "Nord Labs Inc",
+    "segment": "Pharma / Life Sciences",
+    "order_date": "2024-03-29",
+    "state": "draft",
+    "lines": [
+      {
+        "product": "SCADA System CA-101",
+        "qty": 3,
+        "price_unit": 91812.89
+      },
+      {
+        "product": "Pressure Vessel PV-103",
+        "qty": 2,
+        "price_unit": 153798.47
+      },
+      {
+        "product": "Sensor Array CA-102",
+        "qty": 3,
+        "price_unit": 84833.42
+      }
+    ]
+  },
+  {
+    "sale_order_id": 13,
+    "customer": "Anchor Pharma Inc",
+    "segment": "Pharma / Life Sciences",
+    "order_date": "2026-01-15",
+    "state": "paid",
+    "lines": [
+      {
+        "product": "Spare Parts Bundle SP-100",
+        "qty": 5,
+        "price_unit": 10524.71
+      },
+      {
+        "product": "Conveyor System MH-100",
+        "qty": 1,
+        "price_unit": 59814.53
+      },
+      {
+        "product": "SCADA System CA-103",
+        "qty": 1,
+        "price_unit": 92191.58
+      }
+    ],
+    "invoice_id": 14,
+    "invoice_date": "2026-01-18",
+    "payment_date": "2026-02-22"
+  },
+  {
+    "sale_order_id": 14,
+    "customer": "Alpine Technologies Holdings",
+    "segment": "High-growth New Account",
+    "order_date": "2025-08-22",
+    "state": "paid",
+    "lines": [
+      {
+        "product": "SCADA System CA-103",
+        "qty": 4,
+        "price_unit": 97037.94
+      },
+      {
+        "product": "Sensor Array CA-100",
+        "qty": 2,
+        "price_unit": 35972.26
+      }
+    ],
+    "invoice_id": 15,
+    "invoice_date": "2025-08-24",
+    "payment_date": "2025-10-24"
+  },
+  {
+    "sale_order_id": 15,
+    "customer": "Titan Manufacturing Ltd",
+    "segment": "Mid-market Industrial",
+    "order_date": "2024-01-29",
+    "state": "draft",
+    "lines": [
+      {
+        "product": "Sorting Unit MH-101",
+        "qty": 5,
+        "price_unit": 69205.28
+      },
+      {
+        "product": "Industrial HVAC Unit TH-102",
+        "qty": 1,
+        "price_unit": 158956.22
+      }
+    ]
+  },
+  {
+    "sale_order_id": 16,
+    "customer": "Cascade Dynamics GmbH",
+    "segment": "High-growth New Account",
+    "order_date": "2024-11-16",
+    "state": "paid",
+    "lines": [
+      {
+        "product": "Spare Parts Bundle SP-100",
+        "qty": 1,
+        "price_unit": 11405.43
+      },
+      {
+        "product": "Sensor Array CA-100",
+        "qty": 4,
+        "price_unit": 36075.85
+      },
+      {
+        "product": "Mixing Tank PV-100",
+        "qty": 1,
+        "price_unit": 179547.83
+      }
+    ],
+    "invoice_id": 16,
+    "invoice_date": "2024-11-19",
+    "payment_date": "2024-12-29"
+  },
+  {
+    "sale_order_id": 17,
+    "customer": "Anchor AgriProcessing Inc",
+    "segment": "Large F&B",
+    "order_date": "2024-03-12",
+    "state": "unpaid",
+    "lines": [
+      {
+        "product": "Robotic Cell PL-100",
+        "qty": 5,
+        "price_unit": 529453.32
+      },
+      {
+        "product": "Mixing Tank PV-100",
+        "qty": 1,
+        "price_unit": 179220.7
+      },
+      {
+        "product": "Spare Parts Bundle SP-100",
+        "qty": 5,
+        "price_unit": 11225.49
+      }
+    ],
+    "invoice_id": 17,
+    "invoice_date": "2024-03-17"
+  },
+  {
+    "sale_order_id": 18,
+    "customer": "Summit Metalworks Corp",
+    "segment": "Mid-market Industrial",
+    "order_date": "2023-11-01",
+    "state": "paid",
+    "lines": [
+      {
+        "product": "SCADA System CA-103",
+        "qty": 4,
+        "price_unit": 94426.27
+      }
+    ],
+    "invoice_id": 18,
+    "invoice_date": "2023-11-04",
+    "credit_note_id": 19,
+    "payment_date": "2024-02-01"
+  },
+  {
+    "sale_order_id": 19,
+    "customer": "Anchor Pharma Inc",
+    "segment": "Pharma / Life Sciences",
+    "order_date": "2023-11-04",
+    "state": "paid",
+    "lines": [
+      {
+        "product": "Sensor Array CA-102",
+        "qty": 5,
+        "price_unit": 92825.23
+      },
+      {
+        "product": "SCADA System CA-101",
+        "qty": 5,
+        "price_unit": 93096.28
+      }
+    ],
+    "invoice_id": 20,
+    "invoice_date": "2023-11-09",
+    "payment_date": "2023-12-16"
+  },
+  {
+    "sale_order_id": 20,
+    "customer": "Titan Manufacturing Ltd",
+    "segment": "Mid-market Industrial",
+    "order_date": "2023-12-21",
+    "state": "paid",
+    "lines": [
+      {
+        "product": "Spare Parts Bundle SP-101",
+        "qty": 1,
+        "price_unit": 5832.5
+      },
+      {
+        "product": "Conveyor System MH-102",
+        "qty": 2,
+        "price_unit": 84556.69
+      },
+      {
+        "product": "Mixing Tank PV-100",
+        "qty": 2,
+        "price_unit": 171687.23
+      }
+    ],
+    "invoice_id": 21,
+    "invoice_date": "2023-12-23",
+    "payment_date": "2024-01-13"
+  },
+  {
+    "sale_order_id": 21,
+    "customer": "Atlantic Manufacturing Inc",
+    "segment": "Mid-market Industrial",
+    "order_date": "2026-04-17",
+    "state": "paid",
+    "lines": [
+      {
+        "product": "Storage Tank PV-101",
+        "qty": 2,
+        "price_unit": 70277.79
+      },
+      {
+        "product": "Spare Parts Bundle SP-100",
+        "qty": 1,
+        "price_unit": 11296.24
+      }
+    ],
+    "invoice_id": 22,
+    "invoice_date": "2026-04-21",
+    "payment_date": "2026-06-09"
+  },
+  {
+    "sale_order_id": 22,
+    "customer": "Titan Systems GmbH",
+    "segment": "Mid-market Industrial",
+    "order_date": "2025-02-17",
+    "state": "paid",
+    "lines": [
+      {
+        "product": "Storage Tank PV-101",
+        "qty": 2,
+        "price_unit": 68118.36
+      },
+      {
+        "product": "Sorting Unit MH-101",
+        "qty": 5,
+        "price_unit": 68237.89
+      }
+    ],
+    "invoice_id": 23,
+    "invoice_date": "2025-02-20",
+    "payment_date": "2025-03-27"
+  },
+  {
+    "sale_order_id": 23,
+    "customer": "Anchor AgriProcessing Inc",
+    "segment": "Large F&B",
+    "order_date": "2025-04-20",
+    "state": "paid",
+    "lines": [
+      {
+        "product": "SCADA System CA-103",
+        "qty": 4,
+        "price_unit": 100349.87
+      }
+    ],
+    "invoice_id": 24,
+    "invoice_date": "2025-04-21",
+    "credit_note_id": 25,
+    "payment_date": "2025-05-10"
+  },
+  {
+    "sale_order_id": 24,
+    "customer": "Crest Systems GmbH",
+    "segment": "Mid-market Industrial",
+    "order_date": "2025-06-17",
+    "state": "paid",
+    "lines": [
+      {
+        "product": "Robotic Cell PL-102",
+        "qty": 1,
+        "price_unit": 757914.26
+      },
+      {
+        "product": "Conveyor System MH-102",
+        "qty": 3,
+        "price_unit": 84970.36
+      }
+    ],
+    "invoice_id": 26,
+    "invoice_date": "2025-06-19",
+    "payment_date": "2025-09-12"
+  },
+  {
+    "sale_order_id": 25,
+    "customer": "Cascade Systems Holdings",
+    "segment": "Mid-market Industrial",
+    "order_date": "2024-12-21",
+    "state": "paid",
+    "lines": [
+      {
+        "product": "SCADA System CA-101",
+        "qty": 4,
+        "price_unit": 92337.68
+      },
+      {
+        "product": "Robotic Cell PL-100",
+        "qty": 3,
+        "price_unit": 538039.57
+      },
+      {
+        "product": "Spare Parts Bundle SP-100",
+        "qty": 2,
+        "price_unit": 10540.84
+      }
+    ],
+    "invoice_id": 27,
+    "invoice_date": "2024-12-24",
+    "payment_date": "2025-03-18"
+  },
+  {
+    "sale_order_id": 26,
+    "customer": "Cascade Dynamics GmbH",
+    "segment": "High-growth New Account",
+    "order_date": "2025-09-04",
+    "state": "unpaid",
+    "lines": [
+      {
+        "product": "Sensor Array CA-100",
+        "qty": 4,
+        "price_unit": 36225.3
+      },
+      {
+        "product": "Mixing Tank PV-102",
+        "qty": 5,
+        "price_unit": 96016.55
+      },
+      {
+        "product": "Robotic Cell PL-101",
+        "qty": 5,
+        "price_unit": 279316.81
+      }
+    ],
+    "invoice_id": 28,
+    "invoice_date": "2025-09-05"
+  },
+  {
+    "sale_order_id": 27,
+    "customer": "Crest Nutrition Corp",
+    "segment": "Large F&B",
+    "order_date": "2025-05-30",
+    "state": "paid",
+    "lines": [
+      {
+        "product": "Conveyor System MH-100",
+        "qty": 5,
+        "price_unit": 60198.02
+      },
+      {
+        "product": "Sensor Array CA-100",
+        "qty": 3,
+        "price_unit": 33251.26
+      }
+    ],
+    "invoice_id": 29,
+    "invoice_date": "2025-06-02",
+    "payment_date": "2025-07-13"
+  },
+  {
+    "sale_order_id": 28,
+    "customer": "Anchor AgriProcessing Inc",
+    "segment": "Large F&B",
+    "order_date": "2024-11-30",
+    "state": "draft",
+    "lines": [
+      {
+        "product": "Robotic Cell PL-102",
+        "qty": 3,
+        "price_unit": 718580.84
+      }
+    ]
+  },
+  {
+    "sale_order_id": 29,
+    "customer": "Cascade Systems Holdings",
+    "segment": "Mid-market Industrial",
+    "order_date": "2023-09-11",
+    "state": "paid",
+    "lines": [
+      {
+        "product": "Sensor Array CA-100",
+        "qty": 3,
+        "price_unit": 34851.26
+      },
+      {
+        "product": "Sorting Unit MH-101",
+        "qty": 5,
+        "price_unit": 66550.64
+      },
+      {
+        "product": "Storage Tank PV-101",
+        "qty": 4,
+        "price_unit": 68195.51
+      }
+    ],
+    "invoice_id": 30,
+    "invoice_date": "2023-09-15",
+    "payment_date": "2023-11-15"
+  },
+  {
+    "sale_order_id": 30,
+    "customer": "Sterling Grid GmbH",
+    "segment": "Energy & Utilities",
+    "order_date": "2025-04-10",
+    "state": "paid",
+    "lines": [
+      {
+        "product": "Sorting Unit MH-101",
+        "qty": 4,
+        "price_unit": 62972.47
+      },
+      {
+        "product": "Spare Parts Bundle SP-101",
+        "qty": 1,
+        "price_unit": 6185.56
+      },
+      {
+        "product": "Pressure Vessel PV-103",
+        "qty": 5,
+        "price_unit": 156332.18
+      }
+    ],
+    "invoice_id": 31,
+    "invoice_date": "2025-04-11",
+    "payment_date": "2025-06-27"
+  },
+  {
+    "sale_order_id": 31,
+    "customer": "Crest Systems GmbH",
+    "segment": "Mid-market Industrial",
+    "order_date": "2024-01-22",
+    "state": "paid",
+    "lines": [
+      {
+        "product": "Robotic Cell PL-102",
+        "qty": 2,
+        "price_unit": 710157.03
+      },
+      {
+        "product": "Spare Parts Bundle SP-101",
+        "qty": 3,
+        "price_unit": 6040.15
+      },
+      {
+        "product": "Robotic Cell PL-100",
+        "qty": 3,
+        "price_unit": 570546.37
+      }
+    ],
+    "invoice_id": 32,
+    "invoice_date": "2024-01-27",
+    "payment_date": "2024-03-12"
+  }
+]

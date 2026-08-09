@@ -5,7 +5,7 @@ Status legend: `COMPLETED` · `IN PROGRESS` · `BLOCKED` · `NEXT` · `NOT START
 | Epic | Name | Status | Notes |
 |---|---|---|---|
 | 01 | Engineering Foundation | COMPLETED | [#1](https://github.com/inspiringviz-spec/benacta-ai-decision-system/issues/1) |
-| 02 | Odoo Digital Enterprise | IN PROGRESS | [#2](https://github.com/inspiringviz-spec/benacta-ai-decision-system/issues/2) — Odoo Online (Enterprise) live at `benacta.odoo.com`, API connectivity verified (ADR-0002) |
+| 02 | Odoo Digital Enterprise | IN PROGRESS | [#2](https://github.com/inspiringviz-spec/benacta-ai-decision-system/issues/2) — full pipeline prototyped end-to-end (see below); scale-up to full §7 volumes still pending |
 | 03 | Planning & Performance Model | NOT STARTED | [#3](https://github.com/inspiringviz-spec/benacta-ai-decision-system/issues/3) |
 | 04 | Enterprise Analytics Engine | NOT STARTED | [#4](https://github.com/inspiringviz-spec/benacta-ai-decision-system/issues/4) |
 | 05 | MCP Capability Layer | NOT STARTED | [#5](https://github.com/inspiringviz-spec/benacta-ai-decision-system/issues/5) |
@@ -24,7 +24,25 @@ Status legend: `COMPLETED` · `IN PROGRESS` · `BLOCKED` · `NEXT` · `NOT START
 
 None currently.
 
+## Epic 02 prototype — status (2026-08-09)
+
+End-to-end pipeline validated against the live `benacta.odoo.com` instance at prototype scale:
+
+| Entity | Count | Notes |
+|---|---|---|
+| Customers | 25 | 5 segments per `docs/domain/business-domain.md` |
+| Suppliers | 15 | 5 categories; "Certified Components" deliberately concentrated on 2 sources |
+| Products | 20 | 6 families, priced to hit each family's target margin |
+| Employees | 8 | PM/Lead Engineer, hr.employee only — no extra paid seats |
+| Projects | 15 | Incl. Project Atlas & Orion matching master prompt §15/§16/§18 exactly; 8 more cover the remaining causal storylines; 5 healthy baseline |
+| Sales orders → invoices → credit notes → payments | 30 → 25 → 4 → 22 | |
+| Purchase orders → vendor bills → credit notes → payments | 20 → 17 → 3 → 15 | Raw-material suppliers carry a ~18% price escalation over the 36-month window (steel inflation storyline) |
+| Posted journal entries | 52 documents / 193 lines | |
+
+Known simplification: payments are registered via `account.payment.register` but not bank-reconciled, so `payment_state` shows `in_payment` rather than `paid` — acceptable for this stage, revisit if Epic 04's cash metrics need full reconciliation.
+
 ## Next
 
-- Build the ERP Adapter (`/integrations/odoo`) and data generators (`/data/generators`) against the live Odoo instance (Epic 02).
+- Decide full-scale volume for Epic 02 (§7 targets: 500/150/300/200 + 50k/30k/100k transactions) — pragmatic scaling recommended, see conversation history.
 - Move the Odoo API key from local `.env` to a GitHub Actions repository secret before any CI touches it.
+- Epic 04 (Analytics Engine) can now be scaffolded against real data shapes.

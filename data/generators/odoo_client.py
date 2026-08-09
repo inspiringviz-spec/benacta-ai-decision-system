@@ -55,3 +55,21 @@ class OdooClient:
         return self.models.execute_kw(
             self.db, self.uid, self.api_key, model, "search", [domain]
         )
+
+    def write(self, model: str, ids: list[int], values: dict) -> bool:
+        return self.models.execute_kw(
+            self.db, self.uid, self.api_key, model, "write", [ids, values]
+        )
+
+    def execute(self, model: str, method: str, ids: list[int], *args, **kwargs):
+        """Call an arbitrary model method (e.g. action_confirm, action_post)."""
+        params = [ids, *args]
+        return self.models.execute_kw(
+            self.db, self.uid, self.api_key, model, method, params, kwargs
+        )
+
+    def call(self, model: str, method: str, *args, **kwargs):
+        """Call a method that isn't record-bound (e.g. create_invoices helpers)."""
+        return self.models.execute_kw(
+            self.db, self.uid, self.api_key, model, method, list(args), kwargs
+        )

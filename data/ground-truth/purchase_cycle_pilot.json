@@ -1,0 +1,384 @@
+[
+  {
+    "purchase_order_id": 2,
+    "supplier": "Alpine Materials Corp",
+    "category": "Raw Materials",
+    "order_date": "2024-08-21",
+    "state": "draft",
+    "inflation_factor": 1.06,
+    "lines": [
+      {
+        "product": "Maintenance Kit SP-102",
+        "qty": 2,
+        "price_unit": 3242.62
+      }
+    ]
+  },
+  {
+    "purchase_order_id": 3,
+    "supplier": "Meridian SteelWorks Inc",
+    "category": "Raw Materials",
+    "order_date": "2026-08-03",
+    "state": "paid",
+    "inflation_factor": 1.179,
+    "lines": [
+      {
+        "product": "Robotic Cell PL-102",
+        "qty": 3,
+        "price_unit": 683795.43
+      }
+    ],
+    "bill_id": 33,
+    "bill_date": "2026-08-04",
+    "payment_date": "2026-08-23"
+  },
+  {
+    "purchase_order_id": 4,
+    "supplier": "Cascade Circuits Inc",
+    "category": "Electronic Components",
+    "order_date": "2025-06-03",
+    "state": "draft",
+    "inflation_factor": 1.0,
+    "lines": [
+      {
+        "product": "Industrial HVAC Unit TH-101",
+        "qty": 4,
+        "price_unit": 88024.77
+      }
+    ]
+  },
+  {
+    "purchase_order_id": 5,
+    "supplier": "Prime SteelWorks Ltd",
+    "category": "Raw Materials",
+    "order_date": "2026-01-30",
+    "state": "draft",
+    "inflation_factor": 1.148,
+    "lines": [
+      {
+        "product": "SCADA System CA-101",
+        "qty": 4,
+        "price_unit": 63933.1
+      }
+    ]
+  },
+  {
+    "purchase_order_id": 6,
+    "supplier": "Prime Shipping Inc",
+    "category": "Logistics",
+    "order_date": "2025-07-09",
+    "state": "paid",
+    "inflation_factor": 1.0,
+    "lines": [
+      {
+        "product": "Heat Exchanger TH-100",
+        "qty": 1,
+        "price_unit": 40601.52
+      }
+    ],
+    "bill_id": 34,
+    "bill_date": "2025-07-16",
+    "credit_note_id": 35,
+    "payment_date": "2025-08-02"
+  },
+  {
+    "purchase_order_id": 7,
+    "supplier": "Cascade Precision Components Corp",
+    "category": "Certified Components",
+    "order_date": "2023-09-19",
+    "state": "paid",
+    "inflation_factor": 1.0,
+    "lines": [
+      {
+        "product": "Pressure Vessel PV-103",
+        "qty": 1,
+        "price_unit": 115823.26
+      }
+    ],
+    "bill_id": 36,
+    "bill_date": "2023-09-25",
+    "payment_date": "2023-11-17"
+  },
+  {
+    "purchase_order_id": 8,
+    "supplier": "Meridian SteelWorks Inc",
+    "category": "Raw Materials",
+    "order_date": "2024-02-27",
+    "state": "paid",
+    "inflation_factor": 1.031,
+    "lines": [
+      {
+        "product": "Conveyor System MH-100",
+        "qty": 2,
+        "price_unit": 50387.3
+      }
+    ],
+    "bill_id": 37,
+    "bill_date": "2024-03-05",
+    "payment_date": "2024-04-03"
+  },
+  {
+    "purchase_order_id": 9,
+    "supplier": "Union Metals Inc",
+    "category": "Raw Materials",
+    "order_date": "2024-01-30",
+    "state": "paid",
+    "inflation_factor": 1.026,
+    "lines": [
+      {
+        "product": "Mixing Tank PV-102",
+        "qty": 2,
+        "price_unit": 77686.03
+      }
+    ],
+    "bill_id": 38,
+    "bill_date": "2024-02-01",
+    "payment_date": "2024-03-11"
+  },
+  {
+    "purchase_order_id": 10,
+    "supplier": "Prime Shipping Inc",
+    "category": "Logistics",
+    "order_date": "2023-08-31",
+    "state": "unpaid",
+    "inflation_factor": 1.0,
+    "lines": [
+      {
+        "product": "Sorting Unit MH-101",
+        "qty": 2,
+        "price_unit": 52479.83
+      }
+    ],
+    "bill_id": 39,
+    "bill_date": "2023-09-05"
+  },
+  {
+    "purchase_order_id": 11,
+    "supplier": "Cascade Circuits Inc",
+    "category": "Electronic Components",
+    "order_date": "2025-10-08",
+    "state": "paid",
+    "inflation_factor": 1.0,
+    "lines": [
+      {
+        "product": "Sorting Unit MH-101",
+        "qty": 4,
+        "price_unit": 52016.7
+      }
+    ],
+    "bill_id": 40,
+    "bill_date": "2025-10-11",
+    "payment_date": "2025-11-08"
+  },
+  {
+    "purchase_order_id": 12,
+    "supplier": "Delta Electronics Ltd",
+    "category": "Electronic Components",
+    "order_date": "2024-04-18",
+    "state": "paid",
+    "inflation_factor": 1.0,
+    "lines": [
+      {
+        "product": "Conveyor System MH-102",
+        "qty": 4,
+        "price_unit": 64526.77
+      },
+      {
+        "product": "Maintenance Kit SP-102",
+        "qty": 4,
+        "price_unit": 3028.65
+      }
+    ],
+    "bill_id": 41,
+    "bill_date": "2024-04-23",
+    "payment_date": "2024-06-01"
+  },
+  {
+    "purchase_order_id": 13,
+    "supplier": "Summit Logistics Corp",
+    "category": "Logistics",
+    "order_date": "2023-10-11",
+    "state": "paid",
+    "inflation_factor": 1.0,
+    "lines": [
+      {
+        "product": "Robotic Cell PL-101",
+        "qty": 2,
+        "price_unit": 221825.38
+      }
+    ],
+    "bill_id": 42,
+    "bill_date": "2023-10-13",
+    "credit_note_id": 43,
+    "payment_date": "2023-11-11"
+  },
+  {
+    "purchase_order_id": 14,
+    "supplier": "Summit Logistics Corp",
+    "category": "Logistics",
+    "order_date": "2024-05-04",
+    "state": "paid",
+    "inflation_factor": 1.0,
+    "lines": [
+      {
+        "product": "Maintenance Kit SP-102",
+        "qty": 4,
+        "price_unit": 3114.27
+      },
+      {
+        "product": "Heat Exchanger TH-100",
+        "qty": 4,
+        "price_unit": 39760.31
+      }
+    ],
+    "bill_id": 44,
+    "bill_date": "2024-05-08",
+    "payment_date": "2024-06-04"
+  },
+  {
+    "purchase_order_id": 15,
+    "supplier": "Alpine Materials Corp",
+    "category": "Raw Materials",
+    "order_date": "2023-10-19",
+    "state": "paid",
+    "inflation_factor": 1.009,
+    "lines": [
+      {
+        "product": "Robotic Cell PL-102",
+        "qty": 4,
+        "price_unit": 596697.4
+      }
+    ],
+    "bill_id": 45,
+    "bill_date": "2023-10-26",
+    "payment_date": "2023-12-17"
+  },
+  {
+    "purchase_order_id": 16,
+    "supplier": "Anchor Components Corp",
+    "category": "Electronic Components",
+    "order_date": "2023-09-12",
+    "state": "paid",
+    "inflation_factor": 1.0,
+    "lines": [
+      {
+        "product": "SCADA System CA-101",
+        "qty": 1,
+        "price_unit": 58815.29
+      },
+      {
+        "product": "Spare Parts Bundle SP-100",
+        "qty": 3,
+        "price_unit": 6044.84
+      }
+    ],
+    "bill_id": 46,
+    "bill_date": "2023-09-19",
+    "payment_date": "2023-10-20"
+  },
+  {
+    "purchase_order_id": 17,
+    "supplier": "Crest Fabrication Services Industries",
+    "category": "Subcontracted Labor",
+    "order_date": "2024-01-14",
+    "state": "paid",
+    "inflation_factor": 1.0,
+    "lines": [
+      {
+        "product": "Robotic Cell PL-102",
+        "qty": 4,
+        "price_unit": 584309.17
+      }
+    ],
+    "bill_id": 47,
+    "bill_date": "2024-01-15",
+    "credit_note_id": 48,
+    "payment_date": "2024-02-15"
+  },
+  {
+    "purchase_order_id": 18,
+    "supplier": "Alpine Materials Corp",
+    "category": "Raw Materials",
+    "order_date": "2024-07-25",
+    "state": "paid",
+    "inflation_factor": 1.056,
+    "lines": [
+      {
+        "product": "Maintenance Kit SP-102",
+        "qty": 3,
+        "price_unit": 3309.36
+      },
+      {
+        "product": "Sensor Array CA-100",
+        "qty": 4,
+        "price_unit": 22910.95
+      }
+    ],
+    "bill_id": 49,
+    "bill_date": "2024-08-01",
+    "payment_date": "2024-08-25"
+  },
+  {
+    "purchase_order_id": 19,
+    "supplier": "Union Metals Inc",
+    "category": "Raw Materials",
+    "order_date": "2024-06-17",
+    "state": "paid",
+    "inflation_factor": 1.05,
+    "lines": [
+      {
+        "product": "Sensor Array CA-102",
+        "qty": 2,
+        "price_unit": 59069.99
+      },
+      {
+        "product": "Spare Parts Bundle SP-101",
+        "qty": 2,
+        "price_unit": 3431.68
+      }
+    ],
+    "bill_id": 50,
+    "bill_date": "2024-06-21",
+    "payment_date": "2024-08-07"
+  },
+  {
+    "purchase_order_id": 20,
+    "supplier": "Crest Fabrication Services Group",
+    "category": "Subcontracted Labor",
+    "order_date": "2024-09-27",
+    "state": "unpaid",
+    "inflation_factor": 1.0,
+    "lines": [
+      {
+        "product": "Sorting Unit MH-101",
+        "qty": 2,
+        "price_unit": 49872.74
+      }
+    ],
+    "bill_id": 51,
+    "bill_date": "2024-09-28"
+  },
+  {
+    "purchase_order_id": 21,
+    "supplier": "Vertex Semiconductors GmbH",
+    "category": "Electronic Components",
+    "order_date": "2026-04-15",
+    "state": "paid",
+    "inflation_factor": 1.0,
+    "lines": [
+      {
+        "product": "Conveyor System MH-102",
+        "qty": 3,
+        "price_unit": 65984.93
+      },
+      {
+        "product": "Mixing Tank PV-100",
+        "qty": 4,
+        "price_unit": 129988.63
+      }
+    ],
+    "bill_id": 52,
+    "bill_date": "2026-04-22",
+    "payment_date": "2026-06-03"
+  }
+]

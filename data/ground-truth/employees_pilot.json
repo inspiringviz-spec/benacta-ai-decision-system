@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Claire Novak",
+    "job_title": "Project Manager",
+    "odoo_id": 1
+  },
+  {
+    "name": "David El Amrani",
+    "job_title": "Lead Engineer",
+    "odoo_id": 2
+  },
+  {
+    "name": "David Fischer",
+    "job_title": "Project Manager",
+    "odoo_id": 3
+  },
+  {
+    "name": "Klaus Novak",
+    "job_title": "Lead Engineer",
+    "odoo_id": 4
+  },
+  {
+    "name": "Claire Rossi",
+    "job_title": "Project Manager",
+    "odoo_id": 5
+  },
+  {
+    "name": "Piotr Haddad",
+    "job_title": "Lead Engineer",
+    "odoo_id": 6
+  },
+  {
+    "name": "Anna Novak",
+    "job_title": "Project Manager",
+    "odoo_id": 7
+  },
+  {
+    "name": "David Larsen",
+    "job_title": "Lead Engineer",
+    "odoo_id": 8
+  }
+]
