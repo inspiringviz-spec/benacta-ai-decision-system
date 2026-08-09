@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Meridian SteelWorks Inc",
+    "category": "Raw Materials",
+    "city": "Lille",
+    "single_source_risk": false,
+    "odoo_id": 32
+  },
+  {
+    "name": "Alpine Materials Corp",
+    "category": "Raw Materials",
+    "city": "Gdansk",
+    "single_source_risk": false,
+    "odoo_id": 33
+  },
+  {
+    "name": "Union Metals Inc",
+    "category": "Raw Materials",
+    "city": "Katowice",
+    "single_source_risk": false,
+    "odoo_id": 34
+  },
+  {
+    "name": "Prime SteelWorks Ltd",
+    "category": "Raw Materials",
+    "city": "Toulouse",
+    "single_source_risk": false,
+    "odoo_id": 35
+  },
+  {
+    "name": "Anchor Components Corp",
+    "category": "Electronic Components",
+    "city": "Eindhoven",
+    "single_source_risk": false,
+    "odoo_id": 36
+  },
+  {
+    "name": "Vertex Semiconductors GmbH",
+    "category": "Electronic Components",
+    "city": "Gdansk",
+    "single_source_risk": false,
+    "odoo_id": 37
+  },
+  {
+    "name": "Cascade Circuits Inc",
+    "category": "Electronic Components",
+    "city": "Dubai",
+    "single_source_risk": false,
+    "odoo_id": 38
+  },
+  {
+    "name": "Delta Electronics Ltd",
+    "category": "Electronic Components",
+    "city": "Katowice",
+    "single_source_risk": false,
+    "odoo_id": 39
+  },
+  {
+    "name": "Anchor Fabrication Services Ltd",
+    "category": "Subcontracted Labor",
+    "city": "Charlotte",
+    "single_source_risk": false,
+    "odoo_id": 40
+  },
+  {
+    "name": "Crest Fabrication Services Industries",
+    "category": "Subcontracted Labor",
+    "city": "Dubai",
+    "single_source_risk": false,
+    "odoo_id": 41
+  },
+  {
+    "name": "Crest Fabrication Services Group",
+    "category": "Subcontracted Labor",
+    "city": "Essen",
+    "single_source_risk": false,
+    "odoo_id": 42
+  },
+  {
+    "name": "Summit Logistics Corp",
+    "category": "Logistics",
+    "city": "Dubai",
+    "single_source_risk": false,
+    "odoo_id": 43
+  },
+  {
+    "name": "Prime Shipping Inc",
+    "category": "Logistics",
+    "city": "Antwerp",
+    "single_source_risk": false,
+    "odoo_id": 44
+  },
+  {
+    "name": "Crest CompliancePart Group",
+    "category": "Certified Components",
+    "city": "Lyon",
+    "single_source_risk": true,
+    "odoo_id": 45
+  },
+  {
+    "name": "Cascade Precision Components Corp",
+    "category": "Certified Components",
+    "city": "Essen",
+    "single_source_risk": true,
+    "odoo_id": 46
+  }
+]

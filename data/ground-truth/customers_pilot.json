@@ -1,0 +1,152 @@
+[
+  {
+    "name": "Anchor AgriProcessing Inc",
+    "segment": "Large F&B",
+    "city": "Toulouse",
+    "odoo_id": 7
+  },
+  {
+    "name": "Vantage AgriProcessing SA",
+    "segment": "Large F&B",
+    "city": "Nantes",
+    "odoo_id": 8
+  },
+  {
+    "name": "Crest Nutrition Corp",
+    "segment": "Large F&B",
+    "city": "Dubai",
+    "odoo_id": 9
+  },
+  {
+    "name": "Continental Beverages Holdings",
+    "segment": "Large F&B",
+    "city": "Antwerp",
+    "odoo_id": 10
+  },
+  {
+    "name": "Nord Labs Inc",
+    "segment": "Pharma / Life Sciences",
+    "city": "Lille",
+    "odoo_id": 11
+  },
+  {
+    "name": "Horizon Therapeutics Ltd",
+    "segment": "Pharma / Life Sciences",
+    "city": "Katowice",
+    "odoo_id": 12
+  },
+  {
+    "name": "Anchor Pharma Inc",
+    "segment": "Pharma / Life Sciences",
+    "city": "Gdansk",
+    "odoo_id": 13
+  },
+  {
+    "name": "Beacon Renewables Ltd",
+    "segment": "Energy & Utilities",
+    "city": "Katowice",
+    "odoo_id": 14
+  },
+  {
+    "name": "Global Renewables Ltd",
+    "segment": "Energy & Utilities",
+    "city": "Eindhoven",
+    "odoo_id": 15
+  },
+  {
+    "name": "Sterling Grid GmbH",
+    "segment": "Energy & Utilities",
+    "city": "Liège",
+    "odoo_id": 16
+  },
+  {
+    "name": "Crest Systems GmbH",
+    "segment": "Mid-market Industrial",
+    "city": "Lille",
+    "odoo_id": 17
+  },
+  {
+    "name": "Anchor Systems GmbH",
+    "segment": "Mid-market Industrial",
+    "city": "Lille",
+    "odoo_id": 18
+  },
+  {
+    "name": "Titan Systems GmbH",
+    "segment": "Mid-market Industrial",
+    "city": "Dubai",
+    "odoo_id": 19
+  },
+  {
+    "name": "Global Industries Inc",
+    "segment": "Mid-market Industrial",
+    "city": "Antwerp",
+    "odoo_id": 20
+  },
+  {
+    "name": "Summit Manufacturing GmbH",
+    "segment": "Mid-market Industrial",
+    "city": "Lille",
+    "odoo_id": 21
+  },
+  {
+    "name": "Cascade Fabrication Inc",
+    "segment": "Mid-market Industrial",
+    "city": "Casablanca",
+    "odoo_id": 22
+  },
+  {
+    "name": "Prime Systems Holdings",
+    "segment": "Mid-market Industrial",
+    "city": "Eindhoven",
+    "odoo_id": 23
+  },
+  {
+    "name": "Titan Manufacturing Ltd",
+    "segment": "Mid-market Industrial",
+    "city": "Charlotte",
+    "odoo_id": 24
+  },
+  {
+    "name": "Atlantic Manufacturing Inc",
+    "segment": "Mid-market Industrial",
+    "city": "Rotterdam",
+    "odoo_id": 25
+  },
+  {
+    "name": "Summit Metalworks Corp",
+    "segment": "Mid-market Industrial",
+    "city": "Cleveland",
+    "odoo_id": 26
+  },
+  {
+    "name": "Cascade Systems Holdings",
+    "segment": "Mid-market Industrial",
+    "city": "Eindhoven",
+    "odoo_id": 27
+  },
+  {
+    "name": "Beacon Industries Holdings",
+    "segment": "Mid-market Industrial",
+    "city": "Charlotte",
+    "odoo_id": 28
+  },
+  {
+    "name": "Cascade Dynamics GmbH",
+    "segment": "High-growth New Account",
+    "city": "Eindhoven",
+    "odoo_id": 29
+  },
+  {
+    "name": "Alpine Technologies Holdings",
+    "segment": "High-growth New Account",
+    "city": "Eindhoven",
+    "odoo_id": 30
+  },
+  {
+    "name": "Union Technologies Ltd",
+    "segment": "High-growth New Account",
+    "city": "Houston",
+    "odoo_id": 31
+  }
+]

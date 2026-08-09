@@ -1,0 +1,162 @@
+[
+  {
+    "name": "Mixing Tank PV-100",
+    "family": "Process Vessels & Tanks",
+    "standard_price": 132828.14,
+    "list_price": 177104.19,
+    "target_margin": 0.25,
+    "odoo_id": 8
+  },
+  {
+    "name": "Storage Tank PV-101",
+    "family": "Process Vessels & Tanks",
+    "standard_price": 52780.23,
+    "list_price": 70373.64,
+    "target_margin": 0.25,
+    "odoo_id": 9
+  },
+  {
+    "name": "Mixing Tank PV-102",
+    "family": "Process Vessels & Tanks",
+    "standard_price": 76191.86,
+    "list_price": 101589.15,
+    "target_margin": 0.25,
+    "odoo_id": 10
+  },
+  {
+    "name": "Pressure Vessel PV-103",
+    "family": "Process Vessels & Tanks",
+    "standard_price": 115651.05,
+    "list_price": 154201.4,
+    "target_margin": 0.25,
+    "odoo_id": 11
+  },
+  {
+    "name": "Conveyor System MH-100",
+    "family": "Material Handling Systems",
+    "standard_price": 48520.72,
+    "list_price": 64694.29,
+    "target_margin": 0.25,
+    "odoo_id": 12
+  },
+  {
+    "name": "Sorting Unit MH-101",
+    "family": "Material Handling Systems",
+    "standard_price": 51335.87,
+    "list_price": 68447.83,
+    "target_margin": 0.25,
+    "odoo_id": 13
+  },
+  {
+    "name": "Conveyor System MH-102",
+    "family": "Material Handling Systems",
+    "standard_price": 64155.91,
+    "list_price": 85541.21,
+    "target_margin": 0.25,
+    "odoo_id": 14
+  },
+  {
+    "name": "Robotic Cell PL-100",
+    "family": "Automated Production Lines",
+    "standard_price": 444920.59,
+    "list_price": 570411.01,
+    "target_margin": 0.22,
+    "odoo_id": 15
+  },
+  {
+    "name": "Robotic Cell PL-101",
+    "family": "Automated Production Lines",
+    "standard_price": 222824.64,
+    "list_price": 285672.62,
+    "target_margin": 0.22,
+    "odoo_id": 16
+  },
+  {
+    "name": "Robotic Cell PL-102",
+    "family": "Automated Production Lines",
+    "standard_price": 585351.46,
+    "list_price": 750450.59,
+    "target_margin": 0.22,
+    "odoo_id": 17
+  },
+  {
+    "name": "Heat Exchanger TH-100",
+    "family": "Industrial Thermal Systems",
+    "standard_price": 40154.62,
+    "list_price": 57363.74,
+    "target_margin": 0.3,
+    "odoo_id": 18
+  },
+  {
+    "name": "Industrial HVAC Unit TH-101",
+    "family": "Industrial Thermal Systems",
+    "standard_price": 86570.56,
+    "list_price": 123672.23,
+    "target_margin": 0.3,
+    "odoo_id": 19
+  },
+  {
+    "name": "Industrial HVAC Unit TH-102",
+    "family": "Industrial Thermal Systems",
+    "standard_price": 119581.13,
+    "list_price": 170830.19,
+    "target_margin": 0.3,
+    "odoo_id": 20
+  },
+  {
+    "name": "Sensor Array CA-100",
+    "family": "Control & Automation Systems",
+    "standard_price": 21448.76,
+    "list_price": 35747.93,
+    "target_margin": 0.4,
+    "odoo_id": 21
+  },
+  {
+    "name": "SCADA System CA-101",
+    "family": "Control & Automation Systems",
+    "standard_price": 57356.0,
+    "list_price": 95593.33,
+    "target_margin": 0.4,
+    "odoo_id": 22
+  },
+  {
+    "name": "Sensor Array CA-102",
+    "family": "Control & Automation Systems",
+    "standard_price": 55248.08,
+    "list_price": 92080.13,
+    "target_margin": 0.4,
+    "odoo_id": 23
+  },
+  {
+    "name": "SCADA System CA-103",
+    "family": "Control & Automation Systems",
+    "standard_price": 59874.57,
+    "list_price": 99790.95,
+    "target_margin": 0.4,
+    "odoo_id": 24
+  },
+  {
+    "name": "Spare Parts Bundle SP-100",
+    "family": "Spare Parts & Maintenance Kits",
+    "standard_price": 6156.23,
+    "list_price": 11193.15,
+    "target_margin": 0.45,
+    "odoo_id": 25
+  },
+  {
+    "name": "Spare Parts Bundle SP-101",
+    "family": "Spare Parts & Maintenance Kits",
+    "standard_price": 3341.6,
+    "list_price": 6075.64,
+    "target_margin": 0.45,
+    "odoo_id": 26
+  },
+  {
+    "name": "Maintenance Kit SP-102",
+    "family": "Spare Parts & Maintenance Kits",
+    "standard_price": 3120.89,
+    "list_price": 5674.35,
+    "target_margin": 0.45,
+    "odoo_id": 27
+  }
+]
