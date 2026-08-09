@@ -6,7 +6,7 @@ Status legend: `COMPLETED` · `IN PROGRESS` · `BLOCKED` · `NEXT` · `NOT START
 |---|---|---|---|
 | 01 | Engineering Foundation | COMPLETED | [#1](https://github.com/inspiringviz-spec/benacta-ai-decision-system/issues/1) |
 | 02 | Odoo Digital Enterprise | IN PROGRESS | [#2](https://github.com/inspiringviz-spec/benacta-ai-decision-system/issues/2) — full pipeline prototyped end-to-end (see below); scale-up to full §7 volumes still pending |
-| 03 | Planning & Performance Model | NOT STARTED | [#3](https://github.com/inspiringviz-spec/benacta-ai-decision-system/issues/3) |
+| 03 | Planning & Performance Model | IN PROGRESS | [#3](https://github.com/inspiringviz-spec/benacta-ai-decision-system/issues/3) — BUDGET version (BU x month) + Actual vs Budget variance done; quarterly FORECAST reforecasts still pending |
 | 04 | Enterprise Analytics Engine | IN PROGRESS | [#4](https://github.com/inspiringviz-spec/benacta-ai-decision-system/issues/4) — P&L, concentration, project profitability done + tested; AR/AP aging blocked on an Odoo platform bug (see below) |
 | 05 | MCP Capability Layer | NOT STARTED | [#5](https://github.com/inspiringviz-spec/benacta-ai-decision-system/issues/5) |
 | 06 | Enterprise Knowledge / RAG | NOT STARTED | [#6](https://github.com/inspiringviz-spec/benacta-ai-decision-system/issues/6) |

@@ -77,6 +77,29 @@ def compute_pnl(
     )
 
 
+def compute_monthly_by_family(
+    adapter: OdooERPAdapter, date_from: date | None = None, date_to: date | None = None
+) -> dict[tuple[str, str], dict[str, float]]:
+    """Returns {(YYYY-MM, family): {"revenue": x, "cogs": y}} — the ACTUAL
+    side of the Epic 03 planning model, at Business-Unit x Month grain."""
+    products: dict[int, Product] = {p.id: p for p in adapter.get_products()}
+    invoices = adapter.get_customer_invoices(date_from, date_to)
+    credit_notes = adapter.get_customer_credit_notes(date_from, date_to)
+
+    out: dict[tuple[str, str], dict[str, float]] = {}
+    for move, line, sign in _net_lines(invoices, credit_notes):
+        if not move.invoice_date:
+            continue
+        month = move.invoice_date[:7]
+        product = products.get(line.product_id)
+        family = product.family if product else "Unknown"
+        key = (month, family)
+        bucket = out.setdefault(key, {"revenue": 0.0, "cogs": 0.0})
+        bucket["revenue"] += sign * line.price_subtotal
+        bucket["cogs"] += sign * (product.standard_price * line.quantity if product else 0.0)
+    return out
+
+
 if __name__ == "__main__":
     result = compute_pnl(OdooERPAdapter())
     print(f"Revenue:            EUR {result.revenue:,.2f}")

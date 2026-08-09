@@ -1,0 +1,392 @@
+[
+  {
+    "month": "2025-08",
+    "family": "Material Handling Systems",
+    "revenue_budget": 9972.69,
+    "cost_budget": 7772.66
+  },
+  {
+    "month": "2025-09",
+    "family": "Material Handling Systems",
+    "revenue_budget": 10142.82,
+    "cost_budget": 7905.26
+  },
+  {
+    "month": "2025-10",
+    "family": "Material Handling Systems",
+    "revenue_budget": 10465.98,
+    "cost_budget": 8157.13
+  },
+  {
+    "month": "2025-11",
+    "family": "Material Handling Systems",
+    "revenue_budget": 9960.47,
+    "cost_budget": 7763.13
+  },
+  {
+    "month": "2025-12",
+    "family": "Material Handling Systems",
+    "revenue_budget": 8651.91,
+    "cost_budget": 6743.25
+  },
+  {
+    "month": "2026-01",
+    "family": "Material Handling Systems",
+    "revenue_budget": 8675.29,
+    "cost_budget": 6761.47
+  },
+  {
+    "month": "2026-02",
+    "family": "Material Handling Systems",
+    "revenue_budget": 9980.55,
+    "cost_budget": 7778.78
+  },
+  {
+    "month": "2026-03",
+    "family": "Material Handling Systems",
+    "revenue_budget": 9887.2,
+    "cost_budget": 7706.02
+  },
+  {
+    "month": "2026-04",
+    "family": "Material Handling Systems",
+    "revenue_budget": 9661.45,
+    "cost_budget": 7530.08
+  },
+  {
+    "month": "2026-05",
+    "family": "Material Handling Systems",
+    "revenue_budget": 10339.01,
+    "cost_budget": 8058.16
+  },
+  {
+    "month": "2026-06",
+    "family": "Material Handling Systems",
+    "revenue_budget": 8867.44,
+    "cost_budget": 6911.23
+  },
+  {
+    "month": "2026-07",
+    "family": "Material Handling Systems",
+    "revenue_budget": 9458.73,
+    "cost_budget": 7372.08
+  },
+  {
+    "month": "2026-08",
+    "family": "Material Handling Systems",
+    "revenue_budget": 8445.28,
+    "cost_budget": 6582.2
+  },
+  {
+    "month": "2025-08",
+    "family": "Process Vessels & Tanks",
+    "revenue_budget": 63587.91,
+    "cost_budget": 49169.38
+  },
+  {
+    "month": "2025-09",
+    "family": "Process Vessels & Tanks",
+    "revenue_budget": 66551.55,
+    "cost_budget": 51461.01
+  },
+  {
+    "month": "2025-10",
+    "family": "Process Vessels & Tanks",
+    "revenue_budget": 59945.93,
+    "cost_budget": 46353.21
+  },
+  {
+    "month": "2025-11",
+    "family": "Process Vessels & Tanks",
+    "revenue_budget": 60684.05,
+    "cost_budget": 46923.96
+  },
+  {
+    "month": "2025-12",
+    "family": "Process Vessels & Tanks",
+    "revenue_budget": 60549.12,
+    "cost_budget": 46819.63
+  },
+  {
+    "month": "2026-01",
+    "family": "Process Vessels & Tanks",
+    "revenue_budget": 54580.1,
+    "cost_budget": 42204.09
+  },
+  {
+    "month": "2026-02",
+    "family": "Process Vessels & Tanks",
+    "revenue_budget": 53110.24,
+    "cost_budget": 41067.52
+  },
+  {
+    "month": "2026-03",
+    "family": "Process Vessels & Tanks",
+    "revenue_budget": 59874.84,
+    "cost_budget": 46298.25
+  },
+  {
+    "month": "2026-04",
+    "family": "Process Vessels & Tanks",
+    "revenue_budget": 68372.82,
+    "cost_budget": 52869.31
+  },
+  {
+    "month": "2026-05",
+    "family": "Process Vessels & Tanks",
+    "revenue_budget": 64995.19,
+    "cost_budget": 50257.55
+  },
+  {
+    "month": "2026-06",
+    "family": "Process Vessels & Tanks",
+    "revenue_budget": 66040.04,
+    "cost_budget": 51065.49
+  },
+  {
+    "month": "2026-07",
+    "family": "Process Vessels & Tanks",
+    "revenue_budget": 57999.32,
+    "cost_budget": 44848.0
+  },
+  {
+    "month": "2026-08",
+    "family": "Process Vessels & Tanks",
+    "revenue_budget": 64675.67,
+    "cost_budget": 50010.49
+  },
+  {
+    "month": "2025-08",
+    "family": "Spare Parts & Maintenance Kits",
+    "revenue_budget": 6793.24,
+    "cost_budget": 4022.3
+  },
+  {
+    "month": "2025-09",
+    "family": "Spare Parts & Maintenance Kits",
+    "revenue_budget": 7192.71,
+    "cost_budget": 4258.82
+  },
+  {
+    "month": "2025-10",
+    "family": "Spare Parts & Maintenance Kits",
+    "revenue_budget": 6943.19,
+    "cost_budget": 4111.08
+  },
+  {
+    "month": "2025-11",
+    "family": "Spare Parts & Maintenance Kits",
+    "revenue_budget": 8332.33,
+    "cost_budget": 4933.59
+  },
+  {
+    "month": "2025-12",
+    "family": "Spare Parts & Maintenance Kits",
+    "revenue_budget": 6860.8,
+    "cost_budget": 4062.29
+  },
+  {
+    "month": "2026-01",
+    "family": "Spare Parts & Maintenance Kits",
+    "revenue_budget": 8500.26,
+    "cost_budget": 5033.02
+  },
+  {
+    "month": "2026-02",
+    "family": "Spare Parts & Maintenance Kits",
+    "revenue_budget": 8713.72,
+    "cost_budget": 5159.41
+  },
+  {
+    "month": "2026-03",
+    "family": "Spare Parts & Maintenance Kits",
+    "revenue_budget": 7119.82,
+    "cost_budget": 4215.66
+  },
+  {
+    "month": "2026-04",
+    "family": "Spare Parts & Maintenance Kits",
+    "revenue_budget": 7970.38,
+    "cost_budget": 4719.28
+  },
+  {
+    "month": "2026-05",
+    "family": "Spare Parts & Maintenance Kits",
+    "revenue_budget": 8573.5,
+    "cost_budget": 5076.39
+  },
+  {
+    "month": "2026-06",
+    "family": "Spare Parts & Maintenance Kits",
+    "revenue_budget": 8113.07,
+    "cost_budget": 4803.77
+  },
+  {
+    "month": "2026-07",
+    "family": "Spare Parts & Maintenance Kits",
+    "revenue_budget": 8439.42,
+    "cost_budget": 4997.0
+  },
+  {
+    "month": "2026-08",
+    "family": "Spare Parts & Maintenance Kits",
+    "revenue_budget": 7482.89,
+    "cost_budget": 4430.63
+  },
+  {
+    "month": "2025-08",
+    "family": "Control & Automation Systems",
+    "revenue_budget": 59419.93,
+    "cost_budget": 38981.68
+  },
+  {
+    "month": "2025-09",
+    "family": "Control & Automation Systems",
+    "revenue_budget": 66730.97,
+    "cost_budget": 43778.0
+  },
+  {
+    "month": "2025-10",
+    "family": "Control & Automation Systems",
+    "revenue_budget": 53099.41,
+    "cost_budget": 34835.19
+  },
+  {
+    "month": "2025-11",
+    "family": "Control & Automation Systems",
+    "revenue_budget": 55708.28,
+    "cost_budget": 36546.7
+  },
+  {
+    "month": "2025-12",
+    "family": "Control & Automation Systems",
+    "revenue_budget": 59833.6,
+    "cost_budget": 39253.07
+  },
+  {
+    "month": "2026-01",
+    "family": "Control & Automation Systems",
+    "revenue_budget": 60938.76,
+    "cost_budget": 39978.09
+  },
+  {
+    "month": "2026-02",
+    "family": "Control & Automation Systems",
+    "revenue_budget": 62186.89,
+    "cost_budget": 40796.91
+  },
+  {
+    "month": "2026-03",
+    "family": "Control & Automation Systems",
+    "revenue_budget": 60419.98,
+    "cost_budget": 39637.75
+  },
+  {
+    "month": "2026-04",
+    "family": "Control & Automation Systems",
+    "revenue_budget": 62452.52,
+    "cost_budget": 40971.18
+  },
+  {
+    "month": "2026-05",
+    "family": "Control & Automation Systems",
+    "revenue_budget": 70686.59,
+    "cost_budget": 46373.03
+  },
+  {
+    "month": "2026-06",
+    "family": "Control & Automation Systems",
+    "revenue_budget": 69579.99,
+    "cost_budget": 45647.06
+  },
+  {
+    "month": "2026-07",
+    "family": "Control & Automation Systems",
+    "revenue_budget": 54339.32,
+    "cost_budget": 35648.61
+  },
+  {
+    "month": "2026-08",
+    "family": "Control & Automation Systems",
+    "revenue_budget": 61624.64,
+    "cost_budget": 40428.05
+  },
+  {
+    "month": "2025-08",
+    "family": "Automated Production Lines",
+    "revenue_budget": 99182.71,
+    "cost_budget": 70794.16
+  },
+  {
+    "month": "2025-09",
+    "family": "Automated Production Lines",
+    "revenue_budget": 112123.23,
+    "cost_budget": 80030.78
+  },
+  {
+    "month": "2025-10",
+    "family": "Automated Production Lines",
+    "revenue_budget": 99273.75,
+    "cost_budget": 70859.14
+  },
+  {
+    "month": "2025-11",
+    "family": "Automated Production Lines",
+    "revenue_budget": 102640.03,
+    "cost_budget": 73261.91
+  },
+  {
+    "month": "2025-12",
+    "family": "Automated Production Lines",
+    "revenue_budget": 115157.67,
+    "cost_budget": 82196.69
+  },
+  {
+    "month": "2026-01",
+    "family": "Automated Production Lines",
+    "revenue_budget": 115649.64,
+    "cost_budget": 82547.85
+  },
+  {
+    "month": "2026-02",
+    "family": "Automated Production Lines",
+    "revenue_budget": 94963.33,
+    "cost_budget": 67782.47
+  },
+  {
+    "month": "2026-03",
+    "family": "Automated Production Lines",
+    "revenue_budget": 101344.87,
+    "cost_budget": 72337.46
+  },
+  {
+    "month": "2026-04",
+    "family": "Automated Production Lines",
+    "revenue_budget": 117640.04,
+    "cost_budget": 83968.54
+  },
+  {
+    "month": "2026-05",
+    "family": "Automated Production Lines",
+    "revenue_budget": 99525.58,
+    "cost_budget": 71038.89
+  },
+  {
+    "month": "2026-06",
+    "family": "Automated Production Lines",
+    "revenue_budget": 119056.96,
+    "cost_budget": 84979.9
+  },
+  {
+    "month": "2026-07",
+    "family": "Automated Production Lines",
+    "revenue_budget": 96961.88,
+    "cost_budget": 69208.99
+  },
+  {
+    "month": "2026-08",
+    "family": "Automated Production Lines",
+    "revenue_budget": 95680.35,
+    "cost_budget": 68294.26
+  }
+]

@@ -15,6 +15,7 @@ from adapter import OdooERPAdapter  # noqa: E402
 from pnl import compute_pnl  # noqa: E402
 from concentration import customer_concentration, supplier_concentration  # noqa: E402
 from project_profitability import compute_project_profitability  # noqa: E402
+from variance import actual_vs_budget  # noqa: E402
 
 
 def test_pnl_gross_margin_is_internally_consistent():
@@ -47,6 +48,16 @@ def test_project_atlas_matches_master_prompt_example():
     atlas = next(r for r in rows if r.name.startswith("Project Atlas"))
     assert atlas.contract_value == 4_800_000
     assert atlas.cost_variance == 410_000
+
+
+def test_automated_production_lines_shows_cost_overrun_vs_budget():
+    """The Atlas/Orion storyline is designed to make this family run over
+    budget on cost — the variance engine should surface it without being
+    told where to look."""
+    rows = actual_vs_budget(OdooERPAdapter())
+    apl = next(r for r in rows if r.family == "Automated Production Lines")
+    assert apl.cost_variance > 0
+    assert apl.cost_variance_pct > 0.05  # more than a rounding blip
 
 
 def test_all_projects_have_positive_forecast_margin_pct_or_are_flagged():
