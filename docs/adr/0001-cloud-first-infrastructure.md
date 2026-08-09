@@ -2,7 +2,7 @@
 
 ## Status
 
-Accepted
+Accepted. **The ERP hosting decision in this ADR (Odoo.sh) was superseded by [ADR-0002](./0002-odoo-hosting-final.md).**
 
 ## Context
 

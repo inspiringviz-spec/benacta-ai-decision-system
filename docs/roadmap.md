@@ -5,7 +5,7 @@ Status legend: `COMPLETED` · `IN PROGRESS` · `BLOCKED` · `NEXT` · `NOT START
 | Epic | Name | Status | Notes |
 |---|---|---|---|
 | 01 | Engineering Foundation | COMPLETED | [#1](https://github.com/inspiringviz-spec/benacta-ai-decision-system/issues/1) |
-| 02 | Odoo Digital Enterprise | BLOCKED | [#2](https://github.com/inspiringviz-spec/benacta-ai-decision-system/issues/2) — needs Odoo.sh account creation (user) |
+| 02 | Odoo Digital Enterprise | IN PROGRESS | [#2](https://github.com/inspiringviz-spec/benacta-ai-decision-system/issues/2) — Odoo Online (Enterprise) live at `benacta.odoo.com`, API connectivity verified (ADR-0002) |
 | 03 | Planning & Performance Model | NOT STARTED | [#3](https://github.com/inspiringviz-spec/benacta-ai-decision-system/issues/3) |
 | 04 | Enterprise Analytics Engine | NOT STARTED | [#4](https://github.com/inspiringviz-spec/benacta-ai-decision-system/issues/4) |
 | 05 | MCP Capability Layer | NOT STARTED | [#5](https://github.com/inspiringviz-spec/benacta-ai-decision-system/issues/5) |
@@ -22,9 +22,9 @@ Status legend: `COMPLETED` · `IN PROGRESS` · `BLOCKED` · `NEXT` · `NOT START
 
 ## Blocked items
 
-- **Epic 02 (Odoo)** requires an Odoo.sh account and a GitHub-linked project, set up by the user (no browser access available to Claude). See `docs/adr/0001-cloud-first-infrastructure.md`.
+None currently.
 
 ## Next
 
-- Open GitHub issues for all 15 epics.
-- Begin Epic 02 once Odoo.sh access is available; in parallel, epics that don't depend on live Odoo data (e.g. early scaffolding of 04/05/06) can start against a stub adapter.
+- Build the ERP Adapter (`/integrations/odoo`) and data generators (`/data/generators`) against the live Odoo instance (Epic 02).
+- Move the Odoo API key from local `.env` to a GitHub Actions repository secret before any CI touches it.
