@@ -7,7 +7,7 @@ Status legend: `COMPLETED` · `IN PROGRESS` · `BLOCKED` · `NEXT` · `NOT START
 | 01 | Engineering Foundation | COMPLETED | [#1](https://github.com/inspiringviz-spec/benacta-ai-decision-system/issues/1) |
 | 02 | Odoo Digital Enterprise | IN PROGRESS | [#2](https://github.com/inspiringviz-spec/benacta-ai-decision-system/issues/2) — full pipeline prototyped end-to-end (see below); scale-up to full §7 volumes still pending |
 | 03 | Planning & Performance Model | NOT STARTED | [#3](https://github.com/inspiringviz-spec/benacta-ai-decision-system/issues/3) |
-| 04 | Enterprise Analytics Engine | NOT STARTED | [#4](https://github.com/inspiringviz-spec/benacta-ai-decision-system/issues/4) |
+| 04 | Enterprise Analytics Engine | IN PROGRESS | [#4](https://github.com/inspiringviz-spec/benacta-ai-decision-system/issues/4) — P&L, concentration, project profitability done + tested; AR/AP aging blocked on an Odoo platform bug (see below) |
 | 05 | MCP Capability Layer | NOT STARTED | [#5](https://github.com/inspiringviz-spec/benacta-ai-decision-system/issues/5) |
 | 06 | Enterprise Knowledge / RAG | NOT STARTED | [#6](https://github.com/inspiringviz-spec/benacta-ai-decision-system/issues/6) |
 | 07 | Finance Intelligence | NOT STARTED | [#7](https://github.com/inspiringviz-spec/benacta-ai-decision-system/issues/7) |
@@ -39,7 +39,7 @@ End-to-end pipeline validated against the live `benacta.odoo.com` instance at pr
 | Purchase orders → vendor bills → credit notes → payments | 20 → 17 → 3 → 15 | Raw-material suppliers carry a ~18% price escalation over the 36-month window (steel inflation storyline) |
 | Posted journal entries | 52 documents / 193 lines | |
 
-Known simplification: payments are registered via `account.payment.register` but not bank-reconciled, so `payment_state` shows `in_payment` rather than `paid` — acceptable for this stage, revisit if Epic 04's cash metrics need full reconciliation.
+**Known platform issue (not our code):** `account.payment.register` creates the payment record but never creates/posts its journal entry (`move_id` stays `False`), and calling `action_post` on `account.payment` directly fails server-side (`TypeError: cannot marshal None`) on every payment tested. The error trace routes through `saas_trial/controllers/main.py`, suggesting the database may still be on trial infrastructure despite the paid subscription. Net effect: every invoice currently shows as fully outstanding in Odoo regardless of intended payment status, so AR/AP aging and DSO are not yet reliable — P&L, concentration, and project profitability are unaffected (they don't depend on payment/reconciliation state). Next: retest after some time (possible trial-to-paid infra migration delay), or raise with Odoo support.
 
 ## Next
 
