@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Alcor Process Systems",
+    "segment": "Mid-market Industrial",
+    "odoo_id": 60,
+    "source": "BD/SO batch"
+  },
+  {
+    "name": "Brevan Energy",
+    "segment": "Energy & Utilities",
+    "odoo_id": 61,
+    "source": "BD/SO batch"
+  },
+  {
+    "name": "Castell Pharma Plants",
+    "segment": "Pharma / Life Sciences",
+    "odoo_id": 62,
+    "source": "BD/SO batch"
+  },
+  {
+    "name": "Dorval Packaging",
+    "segment": "Large F&B",
+    "odoo_id": 63,
+    "source": "BD/SO batch"
+  },
+  {
+    "name": "Estrel Water Services",
+    "segment": "Energy & Utilities",
+    "odoo_id": 64,
+    "source": "BD/SO batch"
+  },
+  {
+    "name": "Fontaine Agro",
+    "segment": "Large F&B",
+    "odoo_id": 65,
+    "source": "BD/SO batch"
+  },
+  {
+    "name": "Garnier Metalworks",
+    "segment": "Mid-market Industrial",
+    "odoo_id": 66,
+    "source": "BD/SO batch"
+  },
+  {
+    "name": "Halden Logistics",
+    "segment": "Mid-market Industrial",
+    "odoo_id": 67,
+    "source": "BD/SO batch"
+  },
+  {
+    "name": "Ivry Food Lines",
+    "segment": "Large F&B",
+    "odoo_id": 68,
+    "source": "BD/SO batch"
+  },
+  {
+    "name": "Jura Precision",
+    "segment": "Mid-market Industrial",
+    "odoo_id": 69,
+    "source": "BD/SO batch"
+  },
+  {
+    "name": "Keraval Chemicals",
+    "segment": "Pharma / Life Sciences",
+    "odoo_id": 70,
+    "source": "BD/SO batch"
+  },
+  {
+    "name": "Lumen Glassworks",
+    "segment": "Mid-market Industrial",
+    "odoo_id": 71,
+    "source": "BD/SO batch"
+  },
+  {
+    "name": "Morvan Paper",
+    "segment": "Mid-market Industrial",
+    "odoo_id": 72,
+    "source": "BD/SO batch"
+  },
+  {
+    "name": "Nerac Textiles",
+    "segment": "Mid-market Industrial",
+    "odoo_id": 73,
+    "source": "BD/SO batch"
+  },
+  {
+    "name": "Orsay Hydraulics",
+    "segment": "Mid-market Industrial",
+    "odoo_id": 74,
+    "source": "BD/SO batch"
+  },
+  {
+    "name": "Pelican Marine Yards",
+    "segment": "Mid-market Industrial",
+    "odoo_id": 75,
+    "source": "BD/SO batch"
+  },
+  {
+    "name": "Quimper Thermal",
+    "segment": "Mid-market Industrial",
+    "odoo_id": 76,
+    "source": "BD/SO batch"
+  },
+  {
+    "name": "Rennes Hydraulics",
+    "segment": "Mid-market Industrial",
+    "odoo_id": 81,
+    "source": "BD/SO batch"
+  },
+  {
+    "name": "Rocroi Mining",
+    "segment": "Energy & Utilities",
+    "odoo_id": 77,
+    "source": "BD/SO batch"
+  },
+  {
+    "name": "Sarlat Cement",
+    "segment": "Mid-market Industrial",
+    "odoo_id": 78,
+    "source": "BD/SO batch"
+  },
+  {
+    "name": "Saumur Cranes",
+    "segment": "Mid-market Industrial",
+    "odoo_id": 82,
+    "source": "BD/SO batch"
+  },
+  {
+    "name": "Tessier Distribution",
+    "segment": "High-growth New Account",
+    "odoo_id": 79,
+    "source": "BD/SO batch"
+  },
+  {
+    "name": "Ubaye Trade Partners",
+    "segment": "High-growth New Account",
+    "odoo_id": 80,
+    "source": "BD/SO batch"
+  },
+  {
+    "name": "Vannes Trading",
+    "segment": "High-growth New Account",
+    "odoo_id": 83,
+    "source": "BD/SO batch"
+  }
+]

@@ -455,12 +455,13 @@
     "name": "INV/2026/00034",
     "move_type": "out_invoice",
     "partner": "Castell Pharma Plants",
-    "segment": "Mid-market Industrial",
+    "segment": "Pharma / Life Sciences",
     "invoice_date": "2026-07-04",
     "amount_total": 3395.64,
-    "outcome": "not_yet_due",
-    "payment_date": "2026-09-11",
-    "amount_paid": 0.0
+    "outcome": "paid",
+    "payment_date": "2026-08-06",
+    "amount_paid": 3395.64,
+    "payment_id": 58
   },
   {
     "move_id": 84,
@@ -563,12 +564,13 @@
     "name": "INV/2026/00043",
     "move_type": "out_invoice",
     "partner": "Keraval Chemicals",
-    "segment": "Mid-market Industrial",
+    "segment": "Pharma / Life Sciences",
     "invoice_date": "2026-07-11",
     "amount_total": 4548.6,
-    "outcome": "not_yet_due",
-    "payment_date": "2026-09-16",
-    "amount_paid": 0.0
+    "outcome": "paid",
+    "payment_date": "2026-08-06",
+    "amount_paid": 4548.6,
+    "payment_id": 59
   },
   {
     "move_id": 93,
