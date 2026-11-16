@@ -41,6 +41,16 @@ End-to-end pipeline validated against the live `benacta.odoo.com` instance at pr
 
 **Payments without journal entries — resolved (2026-11-16, [ADR-0004](adr/0004-payment-settlement-signal.md)):** not a platform bug. The bank journal has no outstanding account, so Odoo 18+ registers payments without an accounting entry and `amount_residual` never moves; `cannot marshal None` was XML-RPC choking on `action_post`'s `None` return. The ERP Adapter now derives `effective_residual` from `matched_payment_ids`, and AR/AP aging, working capital and DSO run on it (`tests/test_working_capital.py`).
 
+**Payments rebalanced (2026-11-16):** the Odoo instance also carries 116 customer invoices (origin `BD/SO/*`, 24 untagged
+customers, created 2026-09-17 by a generator outside this repo) with no payments. `data/generators/payments_rebalance.py`
+now settles every unpaid document according to the segment payment behaviour (business-domain.md), on the dataset clock
+(2026-08-09): 19 payments registered (incl. the three multi-million pilot invoices that sat in the 91+ bucket and 2
+partials), 74 documents left open because not yet due. Idempotent (per-document seeded RNG, matched documents skipped);
+plan in `data/ground-truth/payments_rebalance_2026-08-09.json`. Result: AR EUR 525.8k (0-60 days only), AP 0, DSO 61 days.
+Open points: the BD batch assumes a clock near 2026-09-17 while the repo's is 2026-08-09 (decide one); no overdue AR
+remains (storyline 4 *customer distress* has nothing to show, Crest Systems' invoices were paid in the pilot); AP is fully
+settled, so AP aging is empty.
+
 ## Next
 
 - Decide full-scale volume for Epic 02 (§7 targets: 500/150/300/200 + 50k/30k/100k transactions) — pragmatic scaling recommended, see conversation history.
