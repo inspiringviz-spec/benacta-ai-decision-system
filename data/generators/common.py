@@ -3,11 +3,20 @@ from __future__ import annotations
 
 import json
 import random
+from datetime import date
 from pathlib import Path
 
 from odoo_client import OdooClient
 
 GROUND_TRUTH_DIR = Path(__file__).resolve().parents[1] / "ground-truth"
+
+# Business clock of the synthetic enterprise. The dataset is a frozen snapshot
+# taken on this date: every generator seeds dates relative to it, and the
+# analytics side exposes the same value as `adapter.DATASET_AS_OF`
+# (tests/test_dataset_clock.py keeps the two equal). Documents dated after it
+# may exist in Odoo (e.g. the BD/SO batch of 2026-09-17); time-dependent
+# analytics ignore them until the clock is moved.
+TODAY = date(2026, 8, 9)
 GROUND_TRUTH_DIR.mkdir(parents=True, exist_ok=True)
 
 PREFIXES = [

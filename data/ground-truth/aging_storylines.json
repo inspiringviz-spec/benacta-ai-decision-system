@@ -1,0 +1,90 @@
+[
+  {
+    "ref": "AGING/FERRUM-M4",
+    "move_type": "out_invoice",
+    "partner": "Crest Systems GmbH",
+    "invoice_date": "2026-05-26",
+    "invoice_date_due": "2026-06-25",
+    "days_overdue_at_clock": 45,
+    "amount_untaxed": 105000.0,
+    "storyline": "customer_distress",
+    "odoo_id": 170
+  },
+  {
+    "ref": "AGING/CREST-SPARES",
+    "move_type": "out_invoice",
+    "partner": "Crest Systems GmbH",
+    "invoice_date": "2026-06-08",
+    "invoice_date_due": "2026-07-08",
+    "days_overdue_at_clock": 32,
+    "amount_untaxed": 33579.45,
+    "storyline": "customer_distress",
+    "odoo_id": 171
+  },
+  {
+    "ref": "AGING/CREST-SENSORS",
+    "move_type": "out_invoice",
+    "partner": "Crest Systems GmbH",
+    "invoice_date": "2026-06-22",
+    "invoice_date_due": "2026-07-22",
+    "days_overdue_at_clock": 18,
+    "amount_untaxed": 71495.86,
+    "storyline": "customer_distress",
+    "odoo_id": 172
+  },
+  {
+    "ref": "AGING/AP-DISPUTE",
+    "move_type": "in_invoice",
+    "partner": "Crest CompliancePart Group",
+    "invoice_date": "2026-05-06",
+    "invoice_date_due": "2026-06-05",
+    "days_overdue_at_clock": 65,
+    "amount_untaxed": 55248.08,
+    "storyline": "supplier_disruption",
+    "odoo_id": 173
+  },
+  {
+    "ref": "AGING/AP-OPEN-1",
+    "move_type": "in_invoice",
+    "partner": "Meridian SteelWorks Inc",
+    "invoice_date": "2026-08-01",
+    "invoice_date_due": "2026-08-31",
+    "days_overdue_at_clock": 0,
+    "amount_untaxed": 132828.14,
+    "storyline": null,
+    "odoo_id": 174
+  },
+  {
+    "ref": "AGING/AP-OPEN-2",
+    "move_type": "in_invoice",
+    "partner": "Delta Electronics Ltd",
+    "invoice_date": "2026-07-19",
+    "invoice_date_due": "2026-08-18",
+    "days_overdue_at_clock": 0,
+    "amount_untaxed": 57356.0,
+    "storyline": null,
+    "odoo_id": 175
+  },
+  {
+    "ref": "AGING/AP-OPEN-3",
+    "move_type": "in_invoice",
+    "partner": "Anchor Fabrication Services Ltd",
+    "invoice_date": "2026-07-02",
+    "invoice_date_due": "2026-08-01",
+    "days_overdue_at_clock": 8,
+    "amount_untaxed": 80309.24,
+    "storyline": null,
+    "odoo_id": 176
+  },
+  {
+    "ref": "AGING/AP-OPEN-4",
+    "move_type": "in_invoice",
+    "partner": "Summit Logistics Corp",
+    "invoice_date": "2026-06-18",
+    "invoice_date_due": "2026-07-18",
+    "days_overdue_at_clock": 22,
+    "amount_untaxed": 18468.69,
+    "storyline": null,
+    "odoo_id": 177
+  }
+]

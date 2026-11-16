@@ -112,8 +112,14 @@ def test_live_in_payment_invoices_are_settled_in_the_adapter(adapter):
     assert in_payment, "dataset should contain in_payment invoices"
     # Odoo's accounting residual is still the full amount (no outstanding account)...
     assert all(m.amount_residual == m.amount_total for m in in_payment)
-    # ...but every one of them is covered by matched payments.
-    assert all(m.is_settled and m.matched_payment_ids for m in in_payment)
+    # ...but every one of them carries matched payments, and the adapter
+    # derives the real position: fully covered -> settled, partial payment
+    # (payments_rebalance.py seeds a few) -> a remainder strictly inside (0, total).
+    assert all(m.matched_payment_ids and m.amount_paid > 0 for m in in_payment)
+    settled = [m for m in in_payment if m.is_settled]
+    partial = [m for m in in_payment if not m.is_settled]
+    assert settled, "fully paid invoices must be settled"
+    assert all(0 < m.effective_residual < m.amount_total for m in partial)
 
 
 def test_live_ar_outstanding_is_below_total_invoiced(adapter):

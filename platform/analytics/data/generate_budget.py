@@ -24,10 +24,10 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 sys.path.insert(0, str(Path(__file__).resolve().parents[3] / "integrations" / "odoo"))
 
-from adapter import OdooERPAdapter  # noqa: E402
+from adapter import DATASET_AS_OF, OdooERPAdapter  # noqa: E402
 from pnl import compute_monthly_by_family  # noqa: E402
 
-TODAY = date(2026, 8, 9)
+TODAY = DATASET_AS_OF  # dataset clock, see adapter
 FY_START = TODAY - timedelta(days=365)
 
 # revenue_bias > 1 means actual beat budget; cost_bias > 1 means actual cost

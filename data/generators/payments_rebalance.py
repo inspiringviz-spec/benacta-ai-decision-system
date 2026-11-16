@@ -12,7 +12,8 @@ or before --as-of:
   * picks a payment delay from the partner's segment (partner category tag;
     untagged customers are treated as Mid-market Industrial),
   * applies the storyline exceptions (customer distress: recent invoices stay
-    overdue; a share of mid-market / high-growth accounts pay late or partially),
+    overdue; a share of mid-market / high-growth accounts pay late or partially;
+    documents seeded by aging_storylines.py, ref AGING/*, are never touched),
   * registers the payment through `account.payment.register` only if the
     resulting payment date is <= --as-of. Documents not yet due stay open and
     feed the 0-30 / 31-60 aging buckets.
@@ -33,10 +34,10 @@ from datetime import date, timedelta
 
 import json
 
-from common import GROUND_TRUTH_DIR, write_ground_truth
+from common import GROUND_TRUTH_DIR, TODAY, write_ground_truth
+from aging_storylines import AGING_REF_PREFIX
 from odoo_client import OdooClient
 
-TODAY = date(2026, 8, 9)  # dataset clock, same as the other generators
 BANK_JOURNAL_NAME = "Bank"
 DEFAULT_SEGMENT = "Mid-market Industrial"
 
@@ -145,8 +146,10 @@ def main() -> None:
         "account.move",
         [["move_type", "in", ["out_invoice", "in_invoice"]], ["state", "=", "posted"],
          ["matched_payment_ids", "=", False], ["invoice_date", "<=", args.as_of.isoformat()]],
-        ["name", "move_type", "partner_id", "invoice_date", "amount_total"],
+        ["name", "move_type", "partner_id", "invoice_date", "amount_total", "ref"],
     )
+    # Documents seeded by aging_storylines.py are open on purpose.
+    docs = [d for d in docs if not (d["ref"] or "").startswith(AGING_REF_PREFIX)]
     docs.sort(key=lambda d: (d["invoice_date"], d["id"]))
     plan = [plan_document(d, segment_of(d["partner_id"][0], tags), args.seed, args.as_of) for d in docs]
 

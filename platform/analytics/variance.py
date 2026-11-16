@@ -11,10 +11,10 @@ from dataclasses import dataclass
 from datetime import date, timedelta
 from pathlib import Path
 
-from adapter import OdooERPAdapter
+from adapter import DATASET_AS_OF, OdooERPAdapter
 from pnl import compute_monthly_by_family
 
-TODAY = date(2026, 8, 9)
+TODAY = DATASET_AS_OF  # dataset clock, see adapter
 FY_START = TODAY - timedelta(days=365)
 _BUDGET_PATH = Path(__file__).resolve().parent / "data" / "budget.json"
 

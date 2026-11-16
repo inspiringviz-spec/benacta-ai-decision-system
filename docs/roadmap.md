@@ -47,9 +47,7 @@ now settles every unpaid document according to the segment payment behaviour (bu
 (2026-08-09): 19 payments registered (incl. the three multi-million pilot invoices that sat in the 91+ bucket and 2
 partials), 74 documents left open because not yet due. Idempotent (per-document seeded RNG, matched documents skipped);
 plan in `data/ground-truth/payments_rebalance_2026-08-09.json`. Result: AR EUR 525.8k (0-60 days only), AP 0, DSO 61 days.
-Open points: the BD batch assumes a clock near 2026-09-17 while the repo's is 2026-08-09 (decide one); no overdue AR
-remains (storyline 4 *customer distress* has nothing to show, Crest Systems' invoices were paid in the pilot); AP is fully
-settled, so AP aging is empty.
+Follow-up (same day): (1) **one dataset clock** - `data/generators/common.TODAY` and `adapter.DATASET_AS_OF` are the only definitions of 2026-08-09, every generator and analytic imports one of them and `tests/test_dataset_clock.py` keeps them equal; the dataset is a frozen snapshot at that date, documents dated after it (part of the BD batch) are ignored by time-dependent analytics. (2) **storyline 4 now visible in AR**: `data/generators/aging_storylines.py` seeds the three unpaid Crest Systems invoices the Ferrum narrative describes (M4 milestone 45 days overdue + two unrelated ones), ref `AGING/*`, never touched by the rebalance. (3) **AP aging populated**: four bills within terms plus one disputed 95-day bill from the single-source certified-components supplier (storyline 2). Result at the clock: AR EUR 777.9k (61-90 bucket = Crest), AP EUR 393.3k (91+ = disputed bill), DSO 68 days.
 
 ## Next
 

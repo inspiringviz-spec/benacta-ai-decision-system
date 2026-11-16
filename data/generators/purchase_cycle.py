@@ -11,10 +11,9 @@ import json
 import random
 from datetime import date, timedelta
 
-from common import GROUND_TRUTH_DIR, write_ground_truth
+from common import GROUND_TRUTH_DIR, TODAY, write_ground_truth
 from odoo_client import OdooClient
 
-TODAY = date(2026, 8, 9)
 WINDOW_DAYS = 36 * 30
 
 N_ORDERS = 20
