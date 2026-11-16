@@ -13,6 +13,11 @@ from dataclasses import dataclass, field
 from datetime import date
 from pathlib import Path
 
+# Business clock of the synthetic enterprise (Epic 02 generators seed
+# dates relative to it). Time-dependent analytics default to this date so
+# results stay reproducible as real time passes; pass `as_of` to override.
+DATASET_AS_OF = date(2026, 8, 9)
+
 
 def _load_env() -> dict:
     env_path = Path(__file__).resolve().parents[2] / ".env"
@@ -87,6 +92,21 @@ class Move:
     amount_residual: float
     payment_state: str
     lines: list[InvoiceLine] = field(default_factory=list)
+    # Settlement signal (ADR-0004). On Odoo 18+ a bank journal with no
+    # outstanding account registers payments WITHOUT a journal entry: the
+    # invoice is flagged `in_payment` through `matched_payment_ids`, but
+    # its accounting `amount_residual` stays at the full amount until a
+    # bank statement is reconciled. `amount_paid` / `effective_residual`
+    # are therefore derived from the matched payments, which is the
+    # business-level settlement signal the analytics must use.
+    matched_payment_ids: list[int] = field(default_factory=list)
+    amount_paid: float = 0.0
+    effective_residual: float = 0.0
+    last_payment_date: str | None = None
+
+    @property
+    def is_settled(self) -> bool:
+        return self.effective_residual <= 0.005
 
 
 class OdooERPAdapter:
@@ -107,6 +127,44 @@ class OdooERPAdapter:
         return self._models.execute_kw(
             self.db, self.uid, self.api_key, model, "search_read", [domain], {"fields": fields}
         )
+
+    # ---- Payments ------------------------------------------------------
+
+    _SETTLING_PAYMENT_STATES = ("in_process", "paid")
+
+    def _get_matched_payments(self, payment_ids: list[int]) -> dict[int, dict]:
+        """One batched read of the payments referenced by `matched_payment_ids`.
+
+        Only payments in a settling state count (`in_process` = sent, `paid`
+        = confirmed); drafts, cancelled and rejected payments do not reduce
+        what the partner owes."""
+        if not payment_ids:
+            return {}
+        rows = self._read(
+            "account.payment",
+            [["id", "in", sorted(set(payment_ids))], ["state", "in", list(self._SETTLING_PAYMENT_STATES)]],
+            ["amount", "date", "state", "payment_type"],
+        )
+        return {r["id"]: r for r in rows}
+
+    @staticmethod
+    def _settlement(move_row: dict, payments: dict[int, dict]) -> tuple[float, float, str | None]:
+        """Return (amount_paid, effective_residual, last_payment_date) for one move.
+
+        If Odoo already reconciled the payment (outstanding account configured,
+        `amount_residual` < `amount_total`), trust the accounting residual and
+        do not count the same payment twice."""
+        total = move_row["amount_total"]
+        accounting_residual = move_row["amount_residual"]
+        matched = [payments[i] for i in move_row.get("matched_payment_ids") or [] if i in payments]
+        if accounting_residual < total - 0.005:
+            paid = round(total - accounting_residual, 2)
+            residual = round(accounting_residual, 2)
+        else:
+            paid = round(min(sum(p["amount"] for p in matched), total), 2)
+            residual = round(max(total - paid, 0.0), 2)
+        last_date = max((p["date"] for p in matched if p.get("date")), default=None)
+        return paid, residual, last_date
 
     # ---- Master data -------------------------------------------------
 
@@ -198,10 +256,15 @@ class OdooERPAdapter:
         rows = self._read(
             "account.move",
             domain,
-            ["move_type", "partner_id", "invoice_date", "amount_total", "amount_residual", "payment_state"],
+            [
+                "move_type", "partner_id", "invoice_date", "amount_total", "amount_residual",
+                "payment_state", "matched_payment_ids",
+            ],
         )
+        payments = self._get_matched_payments([pid for r in rows for pid in (r.get("matched_payment_ids") or [])])
         moves = []
         for r in rows:
+            amount_paid, effective_residual, last_payment_date = self._settlement(r, payments)
             line_rows = self._read(
                 "account.move.line",
                 [["move_id", "=", r["id"]], ["display_type", "=", "product"]],
@@ -228,6 +291,10 @@ class OdooERPAdapter:
                     amount_residual=r["amount_residual"],
                     payment_state=r["payment_state"],
                     lines=lines,
+                    matched_payment_ids=list(r.get("matched_payment_ids") or []),
+                    amount_paid=amount_paid,
+                    effective_residual=effective_residual,
+                    last_payment_date=last_payment_date,
                 )
             )
         return moves
